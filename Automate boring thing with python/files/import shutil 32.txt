@@ -1,0 +1,7 @@
+import shutil can copy files and folders
+exps
+
+import shutil
+shutil.copy(
+shutil.copytree(
+shutil.move(

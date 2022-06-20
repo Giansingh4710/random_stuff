@@ -1,0 +1,5 @@
+youtube-dl -o '/mnt/c/Users/gians/Desktop/yt-dl/videos/%(title)s.%(ext)s' https://youtu.be/Qn5it6jw5Vg 
+youtube-dl -x --audio-format mp3 video_URL
+
+-o - where you want the file to download
+-x - download only audio

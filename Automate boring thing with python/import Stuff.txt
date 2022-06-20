@@ -1,0 +1,15 @@
+import os
+os.getcwd()
+os.chdir(the path)
+os.mkdir(the path)
+os.listdir(dir) #to iterate through a directory
+
+from mutagen.mp3 import MP3
+audio = MP3("example.mp3")
+print(audio.info.length)
+
+
+
+from tqdm import tqdm
+for i in tqdm(range(int(9e6)):
+	print(i)
