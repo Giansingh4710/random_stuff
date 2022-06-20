@@ -6,27 +6,16 @@ Author: Ayushi Rawat
 #import the package
 from pytube import YouTube
 
+def download(url):
+    yt = YouTube(url)
+    yt.streams.get_audio_only().download()
+    yt.streams.get_highest_resolution().download()
+    # vids=yt.streams.all();
+    # for i in range(len(vids)):
+        # print(f'{i}) {vids[i]}');
+    # ind=int(input("Which Video do you want to download: "))
+    # vids[ind].download();
 url = 'https://youtu.be/lc1Q65V3YdI'
-my_video = YouTube(url)
+download(url);
 
-print("*********************Video Title************************")
-#get Video Title
-print(my_video.title)
 
-print("********************Tumbnail Image***********************")
-#get Thumbnail Image
-print(my_video.thumbnail_url)
-
-print("********************Download video*************************")
-#get all the stream resolution for the 
-for stream in my_video.streams:
-    print(stream)
-
-#set stream resolution
-my_video = my_video.streams.get_highest_resolution()
-
-#or
-#my_video = my_video.streams.first()
-
-#Download video
-my_video.download()
